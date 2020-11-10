@@ -1,0 +1,141 @@
+@import"CSS/socialicons.css";
+@import"CSS/Personal-info.css";
+
+.container{
+  display:flex;
+  flex-direction:column;
+}
+.body{
+  display:inline;
+}
+.content{
+  display:inline;
+}
+
+/* medium screen */
+
+@media screen and (min-width: 745px){
+.container{
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "bd bd  cv cv "
+    "ft ft ft ft";
+    grid-auto-rows: minmax(100px, auto);
+}
+}
+/* big screen */
+@media screen and (min-width:780px){
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin: auto;
+    grid-template-columns: 100px repeat(7,1fr);
+    grid-template-rows: 100px 800px 50px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "bd bd bd bd cv cv cv cv cv "
+    "ft ft ft ft ft ft ft ft ft";
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+.share-btn-container {
+  font-size:15px;
+  font-weight: 600;
+  float: left;
+  margin-left: 30%;
+  margin-top:10px;
+}
+.box{
+    border: 1px solid gray;
+}
+.header{
+    grid-area: hd;
+    font-size: 25px;
+    text-align: center;
+}
+.header h1{
+    text-align: center;
+    height: max-content;
+}
+.home{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.body{
+    grid-area: bd;
+}
+.body h2{
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.footer{
+    grid-area: ft;
+}
+
+  /* photo caption*/
+
+  figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    left: 5%;
+    top: 35%;
+  }
+  figure img{
+    width: 70%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  .content{
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    left: 5%;
+    top: 75%;
+  }
+
+  .footer{
+    grid-area: ft;
+    background: transparent;
+    width: 80%;
+    height: 80%;
+    background-color: blanchedalmond;
+    align-items: center;
+    margin: auto;
+    display: inline-block;
+}
+.footer h3{
+    text-align: center;
+}
+
+
+.right{
+  display: block;
+  margin-left:10%;
+  color: bisque;
+}
+
+.home{
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
